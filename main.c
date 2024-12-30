@@ -821,7 +821,8 @@ void termination_signal_handler (int signum) {
     rl_cleanup_after_signal ();
   }
   
-  if (write (1, "SIGNAL received\n", 18) < 0) { 
+  const char sigrec[] = "SIGNAL received\n";
+  if (write (1, sigrec, sizeof(sigrec) - 1) < 0) {
     // Sad thing
   }
  
