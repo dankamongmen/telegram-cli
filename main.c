@@ -507,7 +507,7 @@ FILE *log_net_f;
 
 int register_mode;
 int disable_auto_accept;
-int wait_dialog_list;
+extern int wait_dialog_list;
 
 char *logname;
 int daemonize=0;

@@ -74,7 +74,7 @@
 
 #include <openssl/sha.h>
 
-int verbosity;
+extern int verbosity;
 extern int readline_disabled;
 extern char *bot_hash;
 
@@ -87,7 +87,7 @@ extern int binlog_enabled;
 
 extern int unknown_user_list_pos;
 extern int unknown_user_list[];
-int register_mode;
+extern int register_mode;
 extern int safe_quit;
 extern int sync_from_start;
 
